@@ -44,4 +44,4 @@ swipl -s recordConverter.pl -g recordConverter -t halt
 ---
 ### Developer Contact
 - *Joel Ramirez Vargas*
-  - Email: <ins>joelramva07@gmail.com 
+  - Email: joelramva07@gmail.com 
