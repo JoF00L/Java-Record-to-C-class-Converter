@@ -461,6 +461,7 @@ source_file_name(CName, SName) :- atom_concat(CName, ".cpp", SName).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Main program logic  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Method to check the output for the .h file
 testingHead :- get_records("input", Records),
                open("headTestOutput.txt", write, Stream),
                forall(member(Record, Records), 
@@ -473,6 +474,7 @@ testingHead :- get_records("input", Records),
                close(Stream)
             .  
 
+% Method to check the output for the .cpp file
 testingSrc :- get_records("input", Records),
               open("srcTestOutput.txt", write, Stream),
               forall(member(Record, Records), 
